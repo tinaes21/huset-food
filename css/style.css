@@ -112,4 +112,74 @@ nav a:active,
     margin-left: 60%;
 }
 
+main {
+    margin-top: 8em;
+    margin-bottom: 4em;
+}
+
+#banner {
+    display: none;
+}
+
+article {
+    margin-bottom: 5em;
+}
+
+article h1 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.imgExample {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.textExample {
+    font-size: 0.85em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.btnEx{
+    border: none;
+    width: 80%;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    color: white;
+    background-color: var(--footer-color);
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: var(--footer-color);
+    height: 50px;
+    text-align: center;
+}
+
+
+#tel,
+#address {
+    display: none;
+}
+
+#soMe img {
+    width: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
 
