@@ -56,7 +56,7 @@ nav a:active,
     display: none;
 }
 
-#navMobile {
+#menuMobile {
     display: none;
     position: fixed;
     background-color: rgb(256, 256, 256);
@@ -69,7 +69,7 @@ nav a:active,
 
 }
 
-#navMobile a{
+#menuMobile a{
     font-weight: bold;
     color: black;
     display: block;
@@ -88,7 +88,7 @@ nav a:active,
     cursor: pointer;
 }
 
-#navMobile div{
+#menuMobile div{
     border-top: solid black 1px;
     width: 70%;
     margin-left: auto;
@@ -211,15 +211,15 @@ footer {
         margin-top: 50px;
     }
 
-    #navigation1 {
+    #nav1 {
         grid-area: 1/1;
     }
 
-    #navigation2 {
+    #nav2 {
         grid-area: 1/2;
     }
 
-    #navigation3 {
+    #nav3 {
         grid-area: 1/3;
     }
 
