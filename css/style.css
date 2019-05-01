@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Avenir Next";
+    src: url("css/fonts/AvenirNext.ttc");
+}
+
+body {
+    --header-color: #D4F0FD;
+    --footer-color: #1C1363;
+    font-family: "Avenir Next";
+    margin: 0;
+}
+
+header {
+    background-color: var(--header-color);
+    height: 5.5em;
+    text-align: center;
+    display: grid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav a:link,
+#language:link {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:visited,
+#language:visited {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover,
+#language:hover {
+    text-decoration: none;
+}
+
+nav a:active,
+#language:active {
+    text-decoration: none;
+}
+
+#logo {
+    width: 45px;
+    grid-area: 1/1;
+    margin-top: 10px;
+    display: block;
+    margin-left: 60%;
+    ;
+    margin-right: auto;
+}
+
+#navigation {
+    display: none;
+}
+
+#navMobile {
+    display: none;
+    position: fixed;
+    background-color: rgb(256, 256, 256);
+    z-index: 10;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+
+}
+
+#navMobile a{
+    font-weight: bold;
+    color: black;
+    display: block;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+#cross{
+    color:black;
+    font-weight: bold;
+    padding: 0.1em;
+    font-size: 2.1em;
+    position: absolute;
+    top:0;
+    right: 10%;
+    cursor: pointer;
+}
+
+#navMobile div{
+    border-top: solid black 1px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    padding-top: 2em;
+    font-size: 0.9em;
+}
+
+#language {
+    grid-area: 1/2;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-left: 60%;
+}
+
+#burgermenu {
+    width: 50px;
+    grid-area: 1/3;
+    margin-top: 20px;
+    margin-left: 60%;
+}
+
+
