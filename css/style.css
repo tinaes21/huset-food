@@ -176,6 +176,107 @@ footer {
     margin-top: 10px;
 }
 
+/*MEDIUM SCREEN VIEW*/
+@media all and (min-width:520px) {
+
+    header {
+        width: 100%;
+        height: 5em;
+        display: grid;
+    }
+
+    #burgermenu {
+        display: none;
+    }
+
+    #language {
+        display: none;
+    }
+
+     #logo {
+        grid-area: 1/1;
+        width: 200px;
+        margin-left: 12%;
+        margin-right: inherit;
+    }
+
+    #navigation {
+        display: grid;
+        grid-area: 1/2;
+        text-align: left;
+    }
+
+     #navigation a {
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    #navigation1 {
+        grid-area: 1/1;
+    }
+
+    #navigation2 {
+        grid-area: 1/2;
+    }
+
+    #navigation3 {
+        grid-area: 1/3;
+    }
+
+main {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgExample {
+        width: 90%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .textExample{
+        width: 90%;
+    }
+
+    footer {
+        display: grid;
+        color: white;
+        font-size: 0.7em;
+        height: 70px;
+        text-align: left;
+    }
+
+    #soMe{
+        grid-area: 1/1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #soMe img{
+        margin-right: 10px;
+    }
+
+     #tel{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        grid-area: 1/2;
+    }
+
+    #address {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        grid-area: 1/3;
+    }
+
+}
+
+/*END MEDIUM SCREEN VIEW*/
+
 
 
 
