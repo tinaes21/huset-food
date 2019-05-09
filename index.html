@@ -8,24 +8,24 @@
     <title>Huset-KBH | Home</title>
 </head>
 
-<body>
+<body id="frontpage">
 
     <header>
 
         <nav id="navigation">
             <a id="nav1" href="#">DA/EN</a>
-            <a id="nav2" href="#">About</a>
-            <a id="nav3" href="#">Contact</a>
+            <a id="nav2" href="about.html">About</a>
+            <a id="nav3" href="contact.html">Contact</a>
             <a id="nav4" href="evoo.html">Evoo-Street Kitchen</a>
-            <a id="nav5" href="#">Spisehuset</a>
+            <a id="nav5" href="index.html">Spisehuset</a>
         </nav>
 
         <nav id="menuMobile">
-            <p id="cross">X</p>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Evoo-Street Kitchen</a>
-            <a href="#">Spisehuset</a>
+            <p class="cross">X</p>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="evoo.html">Evoo-Street Kitchen</a>
+            <a href="index.html">Spisehuset</a>
 
 
             <div>
@@ -50,9 +50,7 @@
 
     <main>
 
-        <div id="banner"></div>
-
-        <div id="categories"></div>
+<h1 id="topTitle">The Events</h1>
 
         <div class="wrap"></div>
 
@@ -60,10 +58,11 @@
         <div id="modal" class="hide">
 
             <article>
-                <p id="cross">X</p>
+                <p class="cross">X</p>
                 <h1>Name</h1>
                  <img id="pic">
                 <p id="date"></p>
+                <p id="time"></p>
                 <p id="ticket"></p>
                 <p id="description"></p>
             </article>
@@ -73,20 +72,6 @@
 
     </main>
 
-    <template>
-        <article class="post">
-            <h1 class="title">TITLE GOES HERE</h1>
-            <p class="date">DATE GOES HERE </p>
-            <p class="time">TIME GOES HERE </p>
-            <img class="foodpic">
-            <p class="price">PRICE GOES HERE </p>
-            <p class="eventDes"> </p>
-
-
-        </article>
-
-
-    </template>
 
     <footer>
         <div id="soMe">
@@ -118,6 +103,16 @@
 
 
     </footer>
+
+
+<template>
+        <article>
+            <h1 class="title">TITLE GOES HERE</h1>
+            <img class="foodpic">
+        </article>
+
+
+    </template>
 
 
     <script src="javascript/script.js"></script>

@@ -8,7 +8,21 @@ body {
     --footer-color:#005F2A;
     font-family: "Avenir Next";
     margin: 0;
+    position: relative;
+    min-height: 100%;
+
 }
+
+
+#frontpage{
+   background-image: url(1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+
 
 header {
     background-color: var(--header-color);
@@ -20,24 +34,24 @@ header {
     top: 0;
 }
 
-nav a:link,
+a:link,
 #language:link {
     color: black;
     text-decoration: none;
 }
 
-nav a:visited,
+a:visited,
 #language:visited {
     color: black;
     text-decoration: none;
 }
 
-nav a:hover,
+a:hover,
 #language:hover {
     text-decoration: none;
 }
 
-nav a:active,
+a:active,
 #language:active {
     text-decoration: none;
 }
@@ -77,7 +91,7 @@ nav a:active,
     margin-top: 1em;
 }
 
-#cross{
+.cross{
     color:black;
     font-weight: bold;
     padding: 0.1em;
@@ -113,13 +127,10 @@ nav a:active,
 }
 
 main {
-    margin-top: 8em;
-    margin-bottom: 4em;
+    margin-top: 5em;
 }
 
-#banner {
-    display: none;
-}
+
 
 article {
     margin-bottom: 5em;
@@ -128,12 +139,19 @@ article {
 article h1 {
     text-align: center;
     font-size: 1.3em;
+    color: white;
+}
+
+#topTitle{
+    color: white;
+    margin:0;
+    padding:1em;
 }
 
 .foodpic {
-    height: 200px;
+
     width: 100%;
-    background-color: rgb(0, 0, 0, 0.1);
+
 }
 
 .eventDes {
@@ -162,6 +180,13 @@ footer {
     background-color: var(--footer-color);
     height: 50px;
     text-align: center;
+    position: inherit;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+
+
+
 }
 
 
@@ -189,6 +214,33 @@ footer {
 
 .hide{
     display: none;
+}
+
+.pointer{
+    cursor: pointer;
+}
+#modal {
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    top: 0;
+    height: 100%;
+    overflow: scroll;
+    color: black;
+}
+
+#modal article{
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+#modal #pic {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*MEDIUM SCREEN VIEW*/
@@ -252,17 +304,15 @@ main {
         margin-right: auto;
     }
 
-    .imgExample {
-        width: 90%;
+    .foodpic {
+        width: 500px;
         height: 300px;
+        display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
 
-    .textExample{
-        width: 90%;
-    }
 
     footer {
         display: grid;
@@ -296,6 +346,14 @@ main {
         grid-area: 1/3;
     }
 
+    #modal{
+        left: 0;
+        overflow-x: hidden;
+    }
+
+    article{
+        padding-bottom: 4em;
+    }
 
     #evoopic{
     height: 400px;
@@ -337,11 +395,18 @@ main {
         font-weight: bold;
     }
 
+
+    body{
+        overflow-x: hidden;
+    }
+
     footer {
         height: 100px;
-        padding-left: 200px;
+        padding-left: 10px;
         display: grid;
         font-size: 0.8em;
+        width: calc(100% - 120px);
+        left: 120px;
     }
 
     #soMe {
@@ -370,33 +435,28 @@ main {
         margin-top: inherit;
     }
 
-    #banner {
-        display: block;
-        height: 400px;
-        width: 100%;
-        margin-bottom: 3em;
-        background-color: rgb(0, 0, 0, 0.4);
-    }
+
 
 
     .wrap {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 8em;
     }
 
     article{
         margin-bottom: 1em;
     }
 
-    .imgExample {
-        height: 200px;
+    .foodpic {
+        height: 250px;
         width: 400px;
+        display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .textExample {
-        width: 400px;
-    }
+
 
       #article1 {
         grid-area: 1/1;
@@ -412,23 +472,49 @@ main {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    padding-top: 1em;
 }
 
-    .foodpic {
-        height: 250px;
-        width: 400px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+
+
+#modal {
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    top: 0;
+    height: 100%;
+    left: inherit;
+    overflow: scroll;
+
+}
+
+.cross{
+      padding: 0.1em;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    cursor: pointer;
     }
 
-    .eventDes {
-        width: 400px;
-    }
+#modal article{
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    padding: 1em;
 }
 
+#modal #pic {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+
+}
+
 
 
 
